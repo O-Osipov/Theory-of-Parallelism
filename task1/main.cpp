@@ -6,13 +6,16 @@
 
 #define PI 3.1415926535 
 
-#if NUM_TYPE == Float
+#define USE_FLOAT 
+
+#if defined(USE_FLOAT)
 using arr_type = float;
-#elif NUM_TYPE == Double
+#elif defined(USE_DOUBLE)
 using arr_type = double;
 #else
-#error "Unknown NUM_TYPE"
+#error "Unknown type"
 #endif
+
 
 int main(){
     size_t size = 10000000;

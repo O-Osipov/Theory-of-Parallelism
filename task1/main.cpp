@@ -3,11 +3,10 @@
 #include <cstring>
 #include <vector>
 #include <numbers>
-//test
 
 #define PI 3.1415926535 
 
-#define USE_FLOAT 
+// #define USE_FLOAT 
 
 #if defined(USE_FLOAT)
 using arr_type = float;
@@ -28,7 +27,7 @@ int main(){
         vec[i] = std::sin(val);
         sum += vec[i];
     }      
-    std::cout << "Sum: " << sum;
+    std::cout << "Sum: " << sum << std::endl;
 
 
     return 0;

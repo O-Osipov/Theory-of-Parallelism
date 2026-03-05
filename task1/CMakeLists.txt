@@ -4,7 +4,7 @@ project(MyProject LANGUAGES CXX)
 # Переменная типа с возможными значениями Float или Double
 set(NUM_TYPE "Float" CACHE STRING "Numeric type: Float or Double")
 
-# Ограничиваем возможные значения (чтобы не напортачили)
+# Ограничиваем возможные значения 
 set_property(CACHE NUM_TYPE PROPERTY STRINGS Float Double)
 
 # Исполняемый файл из одного исходника
